@@ -2,6 +2,23 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Extensions",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}/packages"],
+      "stopOnEntry": false,
+      "sourceMaps": true,
+      "smartStep": true,
+      "outFiles": ["${workspaceFolder}/packages/*/out/src/**/*.js"],
+      "sourceMapPathOverrides": {
+        "webpack:///salesforcedx-utils-vscode/./*": "${workspaceFolder}/packages/salesforcedx-utils-vscode/*",
+        "webpack:///salesforcedx-sobjects-faux-generator/./*": "${workspaceFolder}/packages/salesforcedx-sobjects-faux-generator/*",
+        "webpack:///*": "*"
+      },
+      "preLaunchTask": "Compile"
+    },
+    {
       "type": "node",
       "request": "attach",
       "protocol": "legacy",
