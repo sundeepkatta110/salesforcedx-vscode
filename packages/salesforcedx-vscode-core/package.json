@@ -733,6 +733,34 @@
       {
         "fileMatch": "*-scratch-def.json",
         "url": "https://forcedotcom.github.io/schemas/project-scratch-def.json/project-scratch-def.schema.json"
+      },
+      {
+        "fileMatch": "*experiences/*views/*.json",
+        "url": "https://gist.githubusercontent.com/sundeep110/fb64c4a0fae4ba5e362b9b6f8103cbe1/raw/3838df167c7303d96c9dbdc6d25788c70cd38a8f/view-schema.json"
+      },
+      {
+        "fileMatch": "/*experiences/*routes/*.json",
+        "url": "./schemas/route-schema.json"
+      },
+      {
+        "fileMatch": "/*experiences/*config/languages.json",
+        "url": "./schemas/languages-schema.json"
+      },
+      {
+        "fileMatch": "/*experiences/*config/mainAppPage.json",
+        "url": "./schemas/mainAppPage-schema.json"
+      },
+      {
+        "fileMatch": "/*experiences/*config/loginAppPage.json",
+        "url": "./schemas/loginAppPage-schema.json"
+      },
+      {
+        "fileMatch": "/*experiences/*config/*.json",
+        "url": "./schemas/site-schema.json"
+      },
+      {
+        "fileMatch": "/*experiences/*variations/*.json",
+        "url": "./schemas/variations-schema.json"
       }
     ],
     "languages": [
